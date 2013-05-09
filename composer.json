@@ -1,16 +1,21 @@
 {
-    "name": "vivoportal/vp",
-    "description": "Vivo Portal Vp",
+    "name": "vivoportal/vp-zendsearch",
+    "description": "ZendSearch (Vivo Portal) ZF2 module",
     "license": "BSD-3-Clause",
     "keywords": [
-        "cms",
         "zf2"
     ],
     "homepage": "http://vivoportal.org/",
-    
+    "autoload": {
+        "psr-0": {
+            "ZendSearch": "src/"
+        },
+        "classmap": [
+            "./Module.php",
+            "src/"
+        ]
+    },
     "require": {
-        "php": ">=5.3.3",
-        "vivoportal/vivoportal": "dev-develop",
-        "firephp/firephp-core": "@dev"
+        "php": ">=5.3.3"
     }
 }
